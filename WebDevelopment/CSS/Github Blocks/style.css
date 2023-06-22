@@ -1,0 +1,36 @@
+*{
+    font-family: sans-serif;
+    font-size: 50px;
+}
+#container{
+    background-color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+    width: 800px;
+}
+h1{
+    color: rgb(48, 47, 47);
+}
+img.octocat {
+    height: 200px;
+    margin: 15px;
+}
+.row1{
+    background-color: lightblue;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.row2{
+    background-color: palevioletred;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+}
+.row3{
+    background-color: white;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+}
