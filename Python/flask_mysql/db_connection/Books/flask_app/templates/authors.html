@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section id="container">
+        <div class="add_new">
+            <H1>New Author</H1>
+            <form action="/create/author" method="Post">
+                <label for="name">Name: </label>
+                <input type="text" name="name" placeholder="Author Name Here..">
+                <br>
+                <input type="submit" value="Create" class="add_dojo">
+            </form>
+        </div>
+        <div class="display_dojo">
+            <h1> All Authors</h1>
+            <div class="dojos">
+                {% for author in authors %}
+                <a href="/authors/{{author.id}}">{{author.name}}</a>
+                {% endfor %}
+            </div>
+            <a href="/books">Add Book</a>
+    </div>
+    </section>
+</body>
+</html>

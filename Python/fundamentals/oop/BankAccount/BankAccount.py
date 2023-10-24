@@ -5,13 +5,12 @@ class BankAccount:
         self.int_rate = int_rate
         self.balance = balance
         BankAccount.all_accounts.append(self)
-        # your code here! (remember, instance attributes go here)
-        # don't worry about user info here; we'll involve the User class soon
+        
     def deposit(self, amount):
         self.balance += amount
         return self
 
-        # your code here
+        
     def withdraw(self, amount):
         if self.balance<amount:
             print ("insufficient funds: Charging a $5 fee")
@@ -19,17 +18,17 @@ class BankAccount:
         else:
             self.balance -= amount
         return self
-        # your code here
+        
     def display_account_info(self):
         print (f"Balance: ${self.balance}")
         return self
-        # your code here
+        
     def yield_interest(self):
         interestrate=self.balance*self.int_rate
         if self.balance>0:
             self.balance+=interestrate
         return self
-        # your code here
+        
     @classmethod
     def print_all_accounts(cls):
         for acoount in cls.all_accounts:

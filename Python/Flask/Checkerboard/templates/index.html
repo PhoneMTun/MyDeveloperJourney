@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <style>
+        .box {
+                background-color: {{color1}};
+        }
+        .box1 {
+                    background-color: {{color2}};
+        }
+        </style>
+</head>
+<body>
+    {% for i in range(row) %}
+    <div>
+        {% for j in range(col) %}
+            <div class="{{ 'box' if (i+j)%2 == 0 else 'box1' }}"></div>
+        {% endfor %}
+    </div>
+{% endfor %}
+</body>
+</html>

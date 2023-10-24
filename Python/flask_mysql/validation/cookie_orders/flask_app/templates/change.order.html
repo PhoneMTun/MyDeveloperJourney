@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+        <div class="row2">
+            <h1>Change Order</h1>
+            <a href="/cookies">Back to purchase</a>"
+        </div>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="error">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form action="/cookies/update/{{ cookie_order.id }}" method="Post">
+            <input type="hidden" name="id" value="{{cookie_order.id}}">
+            <label for="customer_name">Name:     </label>
+            <input type="text" name="customer_name" placeholder="Name HERE" value="{{cookie_order.customer_name}}">
+            <br>
+            <label for="cookie_type">Cookie Type:     </label>
+            <input type="text" name="cookie_type" placeholder="Last Name HERE" value="{{cookie_order.cookie_type}}">
+            <br>
+            <label for="no_of_boxes">Number of boxes:     </label>
+            <input type="number" name="no_of_boxes" placeholder="No of boxes" value="{{cookie_order.no_of_boxes}}">
+            <br>
+            <input type="submit" value="Log">
+        </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.container{
+    background-color: rgb(53, 29, 29);
+    color: white;
+    width: 10rem;
+    padding: 5rem;
+    box-shadow: 5px 5px 5px rgb(87, 87, 87);
+}
+.Login{color: red;}
+.Register{color: purple;}
+h1{
+    text-align: center;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    padding: 20%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}

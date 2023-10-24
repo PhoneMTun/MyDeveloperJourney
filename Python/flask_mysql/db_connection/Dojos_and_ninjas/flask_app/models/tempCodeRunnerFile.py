@@ -1,0 +1,1 @@
+select * from dojos left join ninjas on ninjas.dojo_id=dojos.id

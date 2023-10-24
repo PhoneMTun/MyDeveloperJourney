@@ -1,0 +1,15 @@
+body{text-align: center;
+}
+label{
+    margin: 2rem;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;}
+    
+th,td,.frame {
+border: .1rem solid black;
+}
+h1{
+    margin: .2rem;
+}

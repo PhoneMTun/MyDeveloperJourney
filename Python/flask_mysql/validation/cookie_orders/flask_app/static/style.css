@@ -1,0 +1,11 @@
+td,th,table{
+    border: 0.1rem solid black
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    color: red;
+}

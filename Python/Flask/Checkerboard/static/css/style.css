@@ -1,0 +1,14 @@
+
+.box,.box1{
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+}
+.box{
+
+    background-color: red ;
+}
+.box1{
+
+    background-color: violet ;
+}

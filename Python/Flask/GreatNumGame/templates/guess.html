@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <h1> Welcome to the Great Number Game!</h1>
+    <p> I am thinking of a number between 1 and 100</p>
+    <p> Take a Guess</p>
+    <form action="/guess" method="post">
+        <input type="text" name="guess" placeholder="Enter the number"><br>
+        <button type="submit" class="submit">Submit</button>
+    </Form>
+    {% if 'guess' in session: %}
+        {{session['guess'] == session['num']}}
+        {% if session['guess'] == session['num'] %}
+            <div class="card bg-success">
+                <h2>You got the number!</h2>
+                <a href="/reset" class="btn btn-primary">Play Again</a>
+            </div>
+        {% elif session['guess'] < session['num'] %}
+            <div class="card bg-danger">
+            <h2>Too Low!!!</h2>
+                    
+            </div>
+        {% else %}
+            <div class="card bg-danger">
+                    <h2>Too High!!!</h2>
+            </div>
+        {% endif %}
+    {% endif %}
+</body>
+</html>

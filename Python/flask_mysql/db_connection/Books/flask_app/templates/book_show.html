@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="left_container">
+        <h1> Title: {{book.title}}'s Favorites</h1>
+        <h3>Favourited by:</h3>
+        {% for author in book.authors_who_favorited %}
+        <p>{{author.name}}</p>
+        {% endfor %}
+    </div>
+    <div class="right_container">
+        <h1> Add Book's Favorite</h1>
+        <form action="/join/author" method="post" class="ninja-form">
+            <input type="hidden" name="book_id" value="{{book.id}}">
+            <label for="author_id">Author:</label>
+            <select name="author_id" id="Dojo">
+                {% for author in unfavorited_authors %}
+                    <option value="{{author.id}}">{{author.name}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Add Book">
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+h1{
+    color:red;
+}
+h2{
+    color:purple;
+}
+
+button{
+    width: 10rem;
+    height: 1.5rem;
+    border-color: transparent;
+    margin: 4rem 4rem 4rem 0rem;
+   
+}
+a{
+    text-decoration: none;
+}
+.click:hover{
+        background-color: slateblue;
+}
+.reset:hover{
+    background-color: seagreen;
+}
+.plus2{
+    background-color: aqua;
+}
+.plus2:hover{
+    background-color: blueviolet;
+}
+.plus3{
+    background-color: hotpink;
+}
+.plus3:hover{
+    background-color: skyblue;
+}
+
+
+.click{
+    background-color: greenyellow;
+}
+.reset{
+    background-color: brown;
+}

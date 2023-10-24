@@ -1,0 +1,32 @@
+body{
+    padding: 10%;
+    
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dojos{
+    border: .15rem solid black;
+    padding: 2%;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.add_dojo{
+    
+    margin-top: 1rem;
+    margin-left:3rem;
+    box-shadow: black 2px 2px;
+}
+.ninja-form{
+    display: flex;
+    flex-direction: column;
+    width: 10rem ;
+}
+table,th,td{
+    border: black 1px solid;
+}
