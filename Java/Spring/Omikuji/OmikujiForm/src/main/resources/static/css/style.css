@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+form{
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	border: solid 0.1rem black;
+	padding: 1rem;
+	width: 30%;
+}
+
+.saysomething{
+	height: 50px;
+}
+.submit{
+	width: 30%;
+	margin-left: 10rem;
+}
+label{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.box{
+	color: rgb(159,197,248);
+	border: black solid 0.2rem;
+	padding: 2rem;
+	width: 30%;
+}

@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+.parent{
+	font-size: large;
+	text-align: center;
+	margin-top: 50%;
+}
+
+.date{
+	color: blue;
+}
+.time{color: red;}

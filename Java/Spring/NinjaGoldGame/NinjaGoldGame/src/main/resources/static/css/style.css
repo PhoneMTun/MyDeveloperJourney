@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+*{
+	margin: 3%;
+}
+h2{color: darkgoldenrod;}
+body{padding: 0 auto;}
+
+.yourgold{
+	display: flex;
+	gap: 20px;
+	
+}
+.goldcontainer{
+	border: solid black 0.2rem;
+	width: 5rem;
+}
+.points{
+	text-align: center;
+}
+.box{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.innerbox{
+	border: solid black 0.2rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 1rem;
+	justify-content: space-evenly;
+	width: 8rem;
+	
+}
+iframe{
+	border: solid black 0.2rem;
+	width: 100%;
+	height: 10rem;
+	font-size: x-large;  
+    overflow-y: auto;  
+    padding: 10px;
+}

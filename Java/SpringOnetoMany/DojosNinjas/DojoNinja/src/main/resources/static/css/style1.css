@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+h1{
+	color: red;
+}
+form{
+	color: red;
+}
+input{background-color: red;
+color: white;}
+select{background-color: red;
+color: white;}

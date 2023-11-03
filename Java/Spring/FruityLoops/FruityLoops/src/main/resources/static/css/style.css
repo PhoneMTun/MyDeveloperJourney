@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+h1{color: rgb(255,182,193);}
+table{border-collapse: collapse;}
+tr {
+        border: 0.2rem solid rgb(255,182,193);
+    }
+table{
+	border: 1rem solid rgb(255,182,193);
+}
+th,td{padding: 20px;}

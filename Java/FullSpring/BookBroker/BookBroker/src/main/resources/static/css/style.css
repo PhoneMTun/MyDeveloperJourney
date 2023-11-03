@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+.container{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+.container1{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	
+	
+}
+h1{color: red}
+.errors{
+	color: red;
+}
+
+
+
+.submit{
+	width: 40%;
+	margin-left: 60%;
+}
+.welcome{
+	color: mediumpurple;
+}
+body{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	font-size: x-large;
+	
+}
+td,th{
+	border:black solid 0.2rem;
+}
+th{background-color: chocolate;}
+td{background-color: darkolivegreen;}
+input,.label2{
+background-color: gold;
+margin-top: 0.5rem;
+margin-bottom:0.5rem;
+margin-left: 2rem;
+margin-right: 2rem;
+padding: 1rem;}
+select{width: 538px;
+margin-top: 0.5rem;
+margin-bottom:0.5rem;
+padding: 1rem;
+margin-left: 2rem;
+margin-right: 2rem;
+}
+.label1{
+	background-color:gold;
+	height: 0.3rem;
+}
+.label2{
+	background-color:gold;
+	height: 4rem;
+	
+}
+.submitdelete{
+	background-color: red;
+	width: 5rem;
+	height: 3rem;
+}

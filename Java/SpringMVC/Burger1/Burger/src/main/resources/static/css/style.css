@@ -1,0 +1,14 @@
+@charset "ISO-8859-1";
+h1{color: darkgoldenrod;}
+table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	font-size: xx-large;
+}
+td,th{
+	border:black solid 0.2rem;
+}
+.errors{
+	color: red;
+}

@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+td,th{border: black solid 0.2rem;
+
+}

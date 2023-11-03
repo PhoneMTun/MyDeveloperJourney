@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	
+	
+}
+.errors{
+	color: red;
+}
+
+input{margin-top: 1rem;
+margin-bottom: 1rem;
+background-color: gold;
+height:25px;
+padding: 2%;}
+
+.submit{
+	width: 40%;
+	margin-left: 60%;
+}
+.welcome{
+	color: mediumpurple;
+}
+body{
+	padding-left: 5%;
+	padding-right: 5%;
+}

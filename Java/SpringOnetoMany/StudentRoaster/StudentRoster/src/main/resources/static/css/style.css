@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+h1{
+	color: indianred;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	font-size: x-large;
+	
+}
+td,th{
+	border:black solid 0.2rem;
+}
+th{background-color: chocolate;}
+td{background-color: darkolivegreen;}
+input{width: 500px;
+margin-top: 0.5rem;
+margin-bottom:0.5rem;
+margin-left: 2rem;
+margin-right: 2rem;
+padding: 1rem;}
+select{width: 538px;
+margin-top: 0.5rem;
+margin-bottom:0.5rem;
+padding: 1rem;
+margin-left: 2rem;
+margin-right: 2rem;
+}

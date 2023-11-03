@@ -1,0 +1,2 @@
+
+            if(guess.equals("q")){

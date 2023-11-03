@@ -1,0 +1,34 @@
+@charset "ISO-8859-1";
+
+body{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	font-size: x-large;
+	
+}
+td,th{
+	border:black solid 0.2rem;
+}
+th{background-color: chocolate;}
+td{background-color: darkolivegreen;}
+
+.newcategory{
+	display: flex;
+	flex-direction: column;
+}
+.errors{
+	color: red;
+}
+.vertical-list {
+    list-style-type: disc; /* Default bullet style */
+    padding-left: 20px;   /* Default padding for unordered lists */
+}
+
+.vertical-list li {
+    display: block;       /* Ensures each list item is on a new line */
+}

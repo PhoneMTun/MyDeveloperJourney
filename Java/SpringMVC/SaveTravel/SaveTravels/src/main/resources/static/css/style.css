@@ -1,0 +1,34 @@
+@charset "ISO-8859-1";
+
+h1{color: darkgoldenrod;}
+table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	font-size: xx-large;
+	
+}
+td,th{
+	border:black solid 0.2rem;
+}
+td{
+	background-color: greenyellow;
+}
+th{
+	background-color: lightcoral;
+}
+.errors{
+	color: red;
+}
+button{
+	margin-left: 1rem;
+	color: white;
+	background-color: orangered;
+	box-shadow: 1px 1px 1px black;
+}
+.action{
+	display: flex;
+	color: white;
+	background-color: burlywood;
+	justify-content: space-evenly;
+}
