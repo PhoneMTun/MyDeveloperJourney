@@ -1,0 +1,86 @@
+.tab {
+  text-align: center;
+  display: inline-block;
+  margin: 2px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 1s ease-in; 
+
+}
+.selectedTab:hover {
+  color: goldenrod;
+  animation: jump 1s linear infinite;
+  transform: translateY(-4rem);
+
+}
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4rem);
+  }
+  60% {
+    transform: translateY(-2rem);
+  }
+}
+
+.selectedTab {
+  color: blueviolet;
+  background-color: black;
+  border: 2px solid black;
+  transition: 1s linear;
+  
+  
+}
+
+.nonSelectedTab {
+  color: black;
+  background-color: white;
+  border: 2px solid #bbbbbb;
+}
+
+.results {
+  width: 85%;
+  height: 100px;
+  margin: auto;
+  border: 2px solid #777777;
+  text-align: center;
+}
+
+
+.App {
+  text-align: center;
+  margin: 10px;
+  
+  height: 50%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

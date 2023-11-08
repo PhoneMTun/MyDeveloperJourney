@@ -1,0 +1,48 @@
+.header{
+  background-color: rgb(106,168,79);
+  width: 100%;
+  height: 50px;
+  border: 0.1rem solid black;
+  margin-bottom: 3%;
+}
+.app{
+  padding: 3%;
+  background-color: rgb(221,221,221);
+  border: 0.1rem solid black;
+}
+.ad{
+  width: 100%;
+  border: 0.1rem solid black;
+  height: 40px;
+  
+  background-color: rgb(180,166,213);
+  
+}
+.main{
+  background-color: rgb(224,102,102);
+  border: 0.1rem solid black;
+  width: 80%;
+  height:400px;
+  padding: 1rem;
+}
+.navigation{
+  background-color: rgb(112,167,220);
+  width: 20%;
+  height:300px;
+  border: 0.1rem solid black;
+  margin-left: -2rem;
+  
+}
+.subcontents{
+  background-color: rgb(255,217,102);
+  border: 0.1rem solid black;
+  display: inline-block;
+  width: 22%;
+  height:300px;
+  margin-left: -1..5rem;
+}
+.container{
+  display: flex;
+
+
+}
