@@ -77,7 +77,7 @@ class User:
             flash("Email already exists","register")
             is_valid=False
         elif not re.match(r"[^@]+@[^@]+\.[^@]+", user['email']):
-            flash("Invalid email format", "register","register")
+            flash("Invalid email format", "register")
             is_valid = False
             
         return is_valid

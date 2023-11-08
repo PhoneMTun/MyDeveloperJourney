@@ -1,0 +1,24 @@
+.container2{
+    color: black;
+    width: 10rem;
+    padding: 5rem;
+
+}
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes share</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1> Welcome, {{user.first_name}}</h1>
+    <div class="row2">
+        <h3> All posted recipes:</h3>
+        <a href="/recipes/add">+Create</a>
+        <a href="/logout">Log Out</a>
+    </div>
+    <table>
+        
+        <tr>
+            <th>Name</th>
+            <th>Under</th>
+            <th>Posted By</th>
+            <th>Actions</th>
+        </tr>
+        {% for recipe in recipes %}
+        <tr>
+            <td>{{ recipe.name }}</td>
+            <td>{{ 'Yes' if recipe.under_30 == 1 else 'No' }}</td>
+            <td>{{ recipe.user.first_name }}</td>
+
+
+            <td><a href="/recipes/{{recipe.id}}">view recipe</a>{% if recipe.user.id==user.id %}|<a href="/recipes/edit/{{recipe.id}}">edit</a>|<a href="/recipes/delete/{{recipe.id}}">delete</a></td>{% endif %}
+        </tr>
+        {% endfor%}
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#content {
+    padding: 2% 20%;
+}
+/* nav bar */
+nav{
+    background-color: rgb(159,197,248);
+    color: white;
+    padding: 2% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 150%;
+    
+}
+.right-nav{
+    display: flex;
+    gap: 15%;
+    width: 400px;
+    /* background-color: aquamarine; */
+    
+}
+h1{
+    font-size: 300%;
+}
+
+/* Description */
+
+.discription{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 120%;
+}
+select{
+    width: 40px;
+    height: 40px;
+}
+hr {
+    margin: 40px 0px;
+    border: 1px solid;
+}
+/* blocks */
+
+.weathers{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.block1 {
+    background-color: rgb(238,238,238);
+    padding: 2%;
+    text-align: center;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    /* display: inline-block; */
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.Weather-pic{
+    margin: 10px;
+    border-radius: 50%;
+}
+.coldest{
+    color: rgb(206,43,39);
+}
+.hotest{
+    color:rgb(43,120,228);
+}
+/* cookies container */
+.cookie-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid;
+    font-size: large;
+    padding: 2%;
+    position: fixed;
+    width: 1397px;
+}
+.title{
+    font-weight: bold;
+    font-size: x-large;
+}
+button{
+    width: 20%;
+    height: 40px;
+    background-color: rgb(159,197,248);
+    box-shadow: 2px 2px 2px 2px black;
+}

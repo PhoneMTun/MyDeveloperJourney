@@ -1,6 +1,5 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask_app.models import dojo
-import pprint
 
 class Ninja:
     def __init__(self, data):
@@ -25,6 +24,7 @@ class Ninja:
         data={
             "ninja_id": ninja_id,
         }
+        print (ninja_id)
         result_list= connectToMySQL('dojos_and_ninjas_schema').query_db(query,data)
         ninja=result_list
         return ninja

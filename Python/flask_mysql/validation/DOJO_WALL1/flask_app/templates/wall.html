@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h2> Coding Dojo Wall</h2>
+        <div class="header-right">
+            <h2>Welcome {{user.first_name}}</h2>
+            <a href="/logout">Log Out</a>
+        </div>
+    </div>
+    <hr>
+    <h4> What's on your mind? Create a new post:</h4>
+    {% with messages = get_flashed_messages(category_filter=['post']) %}
+            {% if messages %}
+                {% for message in messages %}
+                <p class="error">{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    <form action="/posts" method="post">
+        <input type="hidden" name="user_id" value="{{user.id}}">
+        <textarea name="content" cols="30" rows="10" placeholder="Enter text here"></textarea>
+        <input  type="submit" value="Publish">
+    </form>
+    <hr>
+    <h3>All Community Posts:</h3>
+    {% for post in posts %}
+    <p><em>{{post.user.first_name}} says = {{post.created_at.strftime("%b %d")}}</em></p>
+    <p>{{post.content}}</p>
+    {% if post.user.id==user.id %}
+    <a href="/posts/delete/{{post.id}}">delete</a>
+    {% endif %}
+    {% for comment in post.comments %}
+        <p><strong>{{ comment.user.first_name }}</strong>: {{ comment.content }}</p>
+    {% endfor %}
+    <hr>
+
+    <h4>post a comment</h4>
+        <form action="/posts/{{post.id}}/comments" method="post">
+            <input type="hidden" name="user_id" value="{{user.id}}">
+            <textarea name="content" cols="30" rows="3" placeholder="Enter text here"></textarea>
+            <input  type="submit" value="comment">
+        </form>
+    {% endfor %}
+</body>
+</html>
+
+
+
+

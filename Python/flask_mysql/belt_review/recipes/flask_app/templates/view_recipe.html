@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reipe Share</title>
+</head>
+<body>
+    
+    <div id="overview">
+        <h1> Welcome {{first_name}}</h1>
+        <div class="row2">
+            <a href="/welcome">back to recipes</a>
+            <a href="/logout">Log Out</a>
+        </div>
+    </div>
+    <div>
+        <h1>{{each_recipe.name}}</h1>
+        <h3>Posted By: {{each_recipe.user.first_name}}</h3>
+    </div>  
+    <div class="container">
+        <p><strong>Description</strong>: {{each_recipe.description}} </p>
+        <p><strong>Under 30 Minutes</strong>: {{ 'Yes' if each_recipe.under_30 == 1 else 'No' }}</p>
+        <p><strong>Instructions</strong>: {{each_recipe.instructions}}</p>
+        <p><strong>Date Mode</strong>: {{each_recipe.date_mode.strftime("%B %d %Y")}}</p>
+
+    </div>
+</body>
+</html>
