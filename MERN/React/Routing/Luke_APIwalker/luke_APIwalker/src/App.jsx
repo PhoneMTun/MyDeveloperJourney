@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react'
-import {BrowserRouter, Link, Routes, Route,  useParams} from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import axios from 'axios'
 import Display from './components/Display'
 import Form from './components/Form'
