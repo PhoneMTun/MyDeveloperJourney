@@ -1,0 +1,298 @@
+use 'my_first-db'
+
+db.createCollection("students")
+
+db.students.insert({name:"Phone Myat Tun", home_state: "Missouri", lucky_number: 4, birthday:{month: 4, day: 7, year: 2000}})
+db.students.insert({name:"Kevin Ramada", home_state: "Missouri", lucky_number: 7, birthday:{month: 1, day: 21, year: 1996}})
+db.students.insert({name:"Kezia Putri", home_state: "Jakarta", lucky_number: 8, birthday:{month: 03, day: 1, year: 2001}})
+db.students.insert({name:"Zar Ni Tun", home_state: "Yangon", lucky_number: 7, birthday:{month: 3, day: 11, year: 2002}})
+db.students.insert({name:"Maria Magdalena Guannawan", home_state: "Jarkarta", lucky_number: 3, birthday:{month: 5, day: 3, year: 2001}})
+db.students.insert({name:"Chris", home_state: "California", lucky_number: 5, birthday:{month: 5, day: 3, year: 2006}})
+
+db.students.find()
+
+db.students.find({home_state: {$in: ["California", "Washignton"]}}).pretty()
+{
+        "_id" : ObjectId("655db235e69501e6eded2545"),
+        "name" : "Chris",
+        "home_state" : "California",
+        "lucky_number" : 5,
+        "birthday" : {
+                "month" : 5,
+                "day" : 3,
+                "year" : 2006
+        }
+}
+
+
+db.students.find({lucky_number: {$gt:3}}).pretty()     
+{                                                        
+        "_id" : ObjectId("655db235e69501e6eded2545"),    
+        "name" : "Chris",                                
+        "home_state" : "California",                     
+        "lucky_number" : 5,                              
+        "birthday" : {                                   
+                "month" : 5,                             
+                "day" : 3,                               
+                "year" : 2006                            
+        }                                                
+}                                                        
+{                                                        
+        "_id" : ObjectId("655e0d20e69501e6eded2546"),    
+        "name" : "Phone Myat Tun",                       
+        "home_state" : "Missouri",                       
+        "lucky_number" : 4,                              
+        "birthday" : {                                   
+                "month" : 4,                             
+                "day" : 7,                               
+                "year" : 2000                            
+        }                                                
+}                                                        
+{                                                        
+        "_id" : ObjectId("655e0d25e69501e6eded2547"),    
+        "name" : "Kevin Ramada",                         
+        "home_state" : "Missouri",                       
+        "lucky_number" : 7,                              
+        "birthday" : {                                   
+                "month" : 1,                             
+                "day" : 21,                              
+                "year" : 1996                            
+        }                                                
+}                                                        
+{                                                        
+        "_id" : ObjectId("655e0d2ae69501e6eded2548"),    
+        "name" : "Kezia Putri",                          
+        "home_state" : "Jakarta",                        
+        "lucky_number" : 8,                              
+        "birthday" : {                                   
+                "month" : 3,                             
+                "day" : 1,                               
+                "year" : 2001                            
+        }                                                
+}                                                        
+{                                                        
+        "_id" : ObjectId("655e0d30e69501e6eded2549"),    
+        "name" : "Zar Ni Tun",                           
+        "home_state" : "Yangon",                         
+        "lucky_number" : 7,                              
+        "birthday" : {                                   
+                "month" : 3,                             
+                "day" : 11,                              
+                "year" : 2002                            
+        }                                                
+}                                                        
+
+db.students.find({lucky_number: {$gt:3}}).pretty()
+{
+        "_id" : ObjectId("655db235e69501e6eded2545"),
+        "name" : "Chris",
+        "home_state" : "California",
+        "lucky_number" : 5,
+        "birthday" : {
+                "month" : 5,
+                "day" : 3,
+                "year" : 2006
+        }
+}
+{
+        "_id" : ObjectId("655e0d20e69501e6eded2546"),
+        "name" : "Phone Myat Tun",
+        "home_state" : "Missouri",
+        "lucky_number" : 4,
+        "birthday" : {
+                "month" : 4,
+                "day" : 7,
+                "year" : 2000
+        }
+}
+{
+        "_id" : ObjectId("655e0d25e69501e6eded2547"),
+        "name" : "Kevin Ramada",
+        "home_state" : "Missouri",
+        "lucky_number" : 7,
+        "birthday" : {
+                "month" : 1,
+                "day" : 21,
+                "year" : 1996
+        }
+}
+{
+        "_id" : ObjectId("655e0d2ae69501e6eded2548"),
+        "name" : "Kezia Putri",
+        "home_state" : "Jakarta",
+        "lucky_number" : 8,
+        "birthday" : {
+                "month" : 3,
+                "day" : 1,
+                "year" : 2001
+        }
+}
+{
+        "_id" : ObjectId("655e0d30e69501e6eded2549"),
+        "name" : "Zar Ni Tun",
+        "home_state" : "Yangon",
+        "lucky_number" : 7,
+        "birthday" : {
+                "month" : 3,
+                "day" : 11,
+                "year" : 2002
+        }
+}
+db.students.find({lucky_number: {$lte:10}}).pretty()
+{
+        "_id" : ObjectId("655db235e69501e6eded2545"),
+        "name" : "Chris",
+        "home_state" : "California",
+        "lucky_number" : 5,
+        "birthday" : {
+                "month" : 5,
+                "day" : 3,
+                "year" : 2006
+        }
+}
+{
+        "_id" : ObjectId("655e0d20e69501e6eded2546"),
+        "name" : "Phone Myat Tun",
+        "home_state" : "Missouri",
+        "lucky_number" : 4,
+        "birthday" : {
+                "month" : 4,
+                "day" : 7,
+                "year" : 2000
+        }
+}
+{
+        "_id" : ObjectId("655e0d25e69501e6eded2547"),
+        "name" : "Kevin Ramada",
+        "home_state" : "Missouri",
+        "lucky_number" : 7,
+        "birthday" : {
+                "month" : 1,
+                "day" : 21,
+                "year" : 1996
+        }
+}
+{
+        "_id" : ObjectId("655e0d2ae69501e6eded2548"),
+        "name" : "Kezia Putri",
+        "home_state" : "Jakarta",
+        "lucky_number" : 8,
+        "birthday" : {
+                "month" : 3,
+                "day" : 1,
+                "year" : 2001
+        }
+}
+{
+        "_id" : ObjectId("655e0d30e69501e6eded2549"),
+        "name" : "Zar Ni Tun",
+        "home_state" : "Yangon",
+        "lucky_number" : 7,
+        "birthday" : {
+                "month" : 3,
+                "day" : 11,
+                "year" : 2002
+        }
+}
+{
+        "_id" : ObjectId("655e0d36e69501e6eded254a"),
+        "name" : "Maria Magdalena Guannawan",
+        "home_state" : "Jarkarta",
+        "lucky_number" : 3,
+        "birthday" : {
+                "month" : 5,
+                "day" : 3,
+                "year" : 2001
+        }
+}
+db.students.find({   $and: [     { lucky_number: { $gt: 1 } },     { lucky_number: { $lte: 9 } }   ] }).pretty()
+{
+        "_id" : ObjectId("655db235e69501e6eded2545"),
+        "name" : "Chris",
+        "home_state" : "California",
+        "lucky_number" : 5,
+        "birthday" : {
+                "month" : 5,
+                "day" : 3,
+                "year" : 2006
+        }
+}
+{
+        "_id" : ObjectId("655e0d20e69501e6eded2546"),
+        "name" : "Phone Myat Tun",
+        "home_state" : "Missouri",
+        "lucky_number" : 4,
+        "birthday" : {
+                "month" : 4,
+                "day" : 7,
+                "year" : 2000
+        }
+}
+{
+        "_id" : ObjectId("655e0d25e69501e6eded2547"),
+        "name" : "Kevin Ramada",
+        "home_state" : "Missouri",
+        "lucky_number" : 7,
+        "birthday" : {
+                "month" : 1,
+                "day" : 21,
+                "year" : 1996
+        }
+}
+{
+        "_id" : ObjectId("655e0d2ae69501e6eded2548"),
+        "name" : "Kezia Putri",
+        "home_state" : "Jakarta",
+        "lucky_number" : 8,
+        "birthday" : {
+                "month" : 3,
+                "day" : 1,
+                "year" : 2001
+        }
+}
+{
+        "_id" : ObjectId("655e0d30e69501e6eded2549"),
+        "name" : "Zar Ni Tun",
+        "home_state" : "Yangon",
+        "lucky_number" : 7,
+        "birthday" : {
+                "month" : 3,
+                "day" : 11,
+                "year" : 2002
+        }
+}
+{
+        "_id" : ObjectId("655e0d36e69501e6eded254a"),
+        "name" : "Maria Magdalena Guannawan",
+        "home_state" : "Jarkarta",
+        "lucky_number" : 3,
+        "birthday" : {
+                "month" : 5,
+                "day" : 3,
+                "year" : 2001
+        }
+}
+db.students.updateMany({}, {$set:{interests:['coding', 'reading', 'research']}})
+{ "acknowledged" : true, "matchedCount" : 6, "modifiedCount" : 6 }
+
+ db.students.updateMany({name: "Phone Myat Tun"}, {$push:{interests:'taxes'}})
+
+db.students.updateMany({name: "Phone Myat Tun"}, {$pull:{interests:'taxes'}})
+
+db.students.findOneAndDelete({ lucky_number: { $gt: 5 } })
+
+db.students.updateMany({}, {$set:{number_of_belts:0}})
+
+db.students.updateMany(   { home_state: "Washington" },   { $inc: { number_of_belts: 1 } } )
+
+db.students.updateMany({}, {$rename: {'number_of_belts':'belts_earned'}})
+{ "acknowledged" : true, "matchedCount" : 4, "modifiedCount" : 4 }
+
+db.students.updateMany({}, { $unset: { 'lucky_number': 1 } })
+
+db.students.updateMany({}, { $currentDate: { updated_on: true } })
+
+
+
+
+
