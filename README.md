@@ -29,8 +29,8 @@ Each project and exercise in this repository is a testament to the skills and co
 
 I am open to collaborations and love connecting with fellow developers. Feel free to reach out!
 
-- GitHub: [https://github.com/PhoneTun](#)
-- LinkedIn: [https://www.linkedin.com/in/phonetun/](#)
+- GitHub: [PhoneTun](https://github.com/PhoneTun)
+- LinkedIn: [PhoneTun](https://www.linkedin.com/in/phonetun/)
 
 ## 🙏 Acknowledgements
 
