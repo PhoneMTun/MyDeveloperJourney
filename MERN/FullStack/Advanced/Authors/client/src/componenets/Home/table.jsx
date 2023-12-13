@@ -1,8 +1,8 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Button } from '@mui/material';
 import DeleteButton from './delete';
-import '../App.css';
+import '../../App.css';
 
 function AuthorsTable({authors, setAuthors}) {
 
@@ -20,9 +20,9 @@ function AuthorsTable({authors, setAuthors}) {
                         <TableRow key={eachAuthor._id}>
                             <TableCell>{eachAuthor.name}</TableCell>
                             <TableCell>
-                                {/* <Button variant="contained" color="primary">
+                                <Button variant="contained" color="primary">
                                     <Link to={`/authors/${eachAuthor._id}`} style={{ textDecoration: 'none', color: 'white' }}>Edit</Link>
-                                </Button> */}
+                                </Button>
                                 {/* <Button variant="contained" color="secondary"> */}
                                     <DeleteButton authorId={eachAuthor._id} authors={authors} setAuthors={setAuthors}/>
                                 {/* </Button> */}

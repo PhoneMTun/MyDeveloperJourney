@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../App.css';
-import AuthorsTable from '../componenets/table.jsx';
+import AuthorsTable from '../componenets/Home/table.jsx';
 import {Link} from 'react-router-dom'
 
 function Home() {
