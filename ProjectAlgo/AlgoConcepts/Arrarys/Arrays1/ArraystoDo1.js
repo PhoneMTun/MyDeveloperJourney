@@ -88,7 +88,14 @@
 
 // insertAt([1,2,3,4]) => [2,1,4,3]
 // insertAt(["Brendan",true,42]) => [true,"Brendan",42]
-
+// function swapPairs(arr) {
+//     for (var i = 0; i < arr.length - 1; i += 2) {
+//         [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+//     }
+//     return arr;
+// }
+// console.log(swapPairs([1, 2, 3, 4])); 
+// console.log(swapPairs(["Brendan", true, 42])); 
 
 
 
@@ -107,17 +114,20 @@
 
 // removeDupes([-2,-2,3.14,5,5,10]) => [-2,3.14,5,10]
 // // removeDupes([9,19,19,19,19,19,29]) => [9,19,29]
-function removeDupes(arr){
-    let j = 1;
-    let i = 0;
+// function removeDupes(arr) {
+//     if (arr.length === 0) return arr;
 
-    while(j <= arr.length){
-        if (arr[j] === arr[i]) {
-            arr[j] = arr[j+1];
-        }
-        j++; 
-    }
-    i++;
-    return arr;
-}
-    console.log(removeDupes([-2, -2, 3.14, 5, 5, 10]));
+//     let i = 0;
+//     for (let j = 1; j < arr.length; j++) {
+//         if (arr[i] !== arr[j]) {
+//             i++;
+//             arr[i] = arr[j];
+//         }
+//     }
+//     arr.length = i + 1; 
+//     return arr;
+// }
+
+// console.log(removeDupes([-2, -2, 3.14, 5, 5, 10]));             
+// console.log(removeDupes([9, 19, 19, 19, 19, 19, 29]));
+
