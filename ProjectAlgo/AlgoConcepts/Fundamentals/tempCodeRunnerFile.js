@@ -1,1 +1,2 @@
-total
+
+        val[i]*= num
