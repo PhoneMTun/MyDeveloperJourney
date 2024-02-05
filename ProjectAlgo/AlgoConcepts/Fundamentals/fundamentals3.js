@@ -186,7 +186,7 @@ let val = [-1,3,5,-5]
 
 // Scale the Array
 // Given array arr and number num, multiply each arr value by num, and return the changed arr.
-
+ 
 // console.log(val)
 // function scaleArray(val, num){
 //     for (let i = 0; i < val.length; i++){
