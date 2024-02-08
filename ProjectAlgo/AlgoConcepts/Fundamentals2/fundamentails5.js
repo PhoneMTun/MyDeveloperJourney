@@ -59,19 +59,19 @@
 // }
 // drawRightStars(5);
 
-function drawCenteredStars(num) {
-    for (let i = 1; i <= num; i++) {
-        let line = '';
-        // Add leading spaces to center the stars
-        for (let j = 1; j <= num - i; j++) {
-            line += ' ';
-        }
-        // Add stars: for each row, the number of stars is (2*i - 1)
-        for (let k = 1; k <= 2 * i - 1; k++) {
-            line += '*';
-        }
-        console.log(line);
-    }
-}
-drawCenteredStars(5);
+// function drawCenteredStars(num) {
+//     for (let i = 1; i <= num; i++) {
+//         let line = '';
+//         // Add leading spaces to center the stars
+//         for (let j = 1; j <= num - i; j++) {
+//             line += ' ';
+//         }
+//         // Add stars: for each row, the number of stars is (2*i - 1)
+//         for (let k = 1; k <= 2 * i - 1; k++) {
+//             line += '*';
+//         }
+//         console.log(line);
+//     }
+// }
+// drawCenteredStars(5);
 
