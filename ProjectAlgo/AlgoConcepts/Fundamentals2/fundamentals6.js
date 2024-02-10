@@ -115,3 +115,61 @@
 // }
 // console.log(Fibonacci(6))
 
+
+// Sum to One Digit
+// Kaitlin sees beauty in numbers, but also believes that less is more. Implement sumToOne(num) that sums a given integer’s digits repeatedly until the sum is only one digit. Return that one-digit result. 
+
+// Example: sumToOne(928) returns 1, because 9+2+8 = 19, then 1+9 = 10, then 1+0 = 1.
+
+// function SumtoOneDigit(num){
+//     let sum = 0;
+//     let temp = num.toString();
+//     for (let i = 0; i < temp.length; i++) {
+//         sum += Number(temp[i])
+//     }
+//     return sum;
+// }
+// console.log(SumtoOneDigit(123))
+
+// Clock Hand Angles
+// Regardless of how hard a Dojo student works (and they should work hard), they need time now and then to unwind – like hands on a clock. Traditional clocks are increasingly uncommon, but most can still read an analog clock’s hands of hours, minutes and seconds. Create clockHandAngles(seconds) that, given a number of seconds since 12:00:00, prints angles (in degrees) of the hour, minute and second hands. As a review, 360 degrees form a full rotation. For input of 3600 secs (equivalent to 1:00:00), print "Hour hand: 30 degs. Minute hand: 0 degs. Second hand: 0 degs." For an input parameter seconds of 119730 (which is equivalent to 9:15:30 plus 24 hours!), you should log "Hour hand: 277.745 degs. Minute hand: 93 degs. Second hand: 180 degs." 
+
+// Note: in the second example, the angle for the minute hand is not simply 90 degrees; it has advanced a bit further, because of the additional 30 seconds in that minute so far.
+
+// Second: also calculate and print degrees for an additional “week hand” that rotates once each week.
+
+// function clockHandAngles(seconds) {
+//     // Normalize seconds for more than a week
+//     seconds = seconds % 604800;
+
+//     // Calculate degrees
+//     const secondHandDegrees = (seconds % 60) * 6;
+//     const minuteHandDegrees = ((seconds % 3600) / 60) * 360 + ((seconds % 60) * 0.1);
+//     const hourHandDegrees = ((seconds % 43200) / 3600) * 360 + ((seconds % 3600) / 60) * 0.5;
+//     const weekHandDegrees = (seconds / 604800) * 360;
+
+//     // Print results
+//     console.log(`Hour hand: ${hourHandDegrees.toFixed(3)} degs. Minute hand: ${minuteHandDegrees.toFixed(3)} degs. Second hand: ${secondHandDegrees.toFixed(3)} degs. Week hand: ${weekHandDegrees.toFixed(3)} degs.`);
+// }
+
+// // Example
+// console.log(clockHandAngles(3600)); // 1:00:00
+// console.log(clockHandAngles(119730)); // 9:15:30 plus 24 hours!
+
+// Is Prime
+// Return whether a given integer is prime. Prime numbers are only evenly divisible by themselves and 1. Many highly optimized solutions exist, but for now, just create one that is easy to understand and debug.
+
+// function isPrime(num){
+//     if(num === 2 || num === 3 ){
+//         return 'PRIME';
+//     }
+//     else if ( num % 2 === 0 || num % 3 === 0){
+//         return 'Not a prime'
+//     }else{
+//         return 'Prime'
+//     }
+// }
+// console.log(isPrime(10));
+
+
+
