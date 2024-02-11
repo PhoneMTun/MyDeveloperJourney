@@ -19,3 +19,7 @@ function sweatshirtPricing(num) {
 }
 
 console.log(sweatshirtPricing(2)); // Corrected function call
+
+
+
+
